@@ -6,3 +6,4 @@ werkzeug===2.2.2
 pandas == 1.5.3
 numpy == 1.24.3
 jsons == 1.6.3
+cloundpickle == 2.2.1
