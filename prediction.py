@@ -1,4 +1,4 @@
-import pickle
+import cloundpickle as pickle
 import pandas as pd
 import json
 
