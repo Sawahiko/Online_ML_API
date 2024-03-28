@@ -6,13 +6,14 @@ def predict_mpg(config):
     ##loading the model from the saved file
     pkl_filename = "model.pkl"
     with open(pkl_filename, 'rb') as f_in:
+        print("p1")
         model = pickle.load(f_in)
-
+    print("p2")
     if type(config) == dict:
         df = pd.DataFrame(config)
     else:
         df = config
-    
+    print("p3")
     y_pred = model.predict(df)
     
     if y_pred == 0:
