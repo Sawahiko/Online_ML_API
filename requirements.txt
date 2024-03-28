@@ -1,3 +1,3 @@
 Flask == 2.2.2
-flask_restful == 4.0.0
-flask_cors == 0.3.10
+flask_restful == 0.3.10
+flask_cors == 4.0.0
