@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect
+from flask import Flask, request, redirect, jsonify
 from flask_restful import Resource, Api
 from flask_cors import CORS
 import os
@@ -32,7 +32,7 @@ class GetPredictionOutput(Resource):
             data = request.get_json()
             predict = prediction.predict_mpg(data)
             predictOutput = predict
-            return {'predict':predictOutput}
+            return jsonify({'predict':predictOutput})
 
         except Exception as error:
             return {'error': error}
